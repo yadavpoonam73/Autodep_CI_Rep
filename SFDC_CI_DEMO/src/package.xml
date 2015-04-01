@@ -5,10 +5,6 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>Custom%3A Marketing Profile</members>
-        <name>Profile</name>
-    </types>
-    <types>
         <members>MarketingTeam</members>
         <name>Role</name>
     </types>
