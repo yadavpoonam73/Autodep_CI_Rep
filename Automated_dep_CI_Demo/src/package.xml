@@ -9,10 +9,6 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>Lead.testtest</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
         <members>Orders__c</members>
         <members>Quote</members>
         <name>CustomObject</name>
