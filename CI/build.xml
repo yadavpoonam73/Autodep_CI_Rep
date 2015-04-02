@@ -1,8 +1,8 @@
-<project name="Sample usage of Salesforce Ant tasks" default="deployUnpackaged" basedir="../Automated_Deployment_CI_Demo/src" xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" default="deployUnpackaged" basedir="../Automated_Dep_CI_Demo/src" xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
     <property environment="env"/>
-
+	
     <!-- REAL TARGETS -->
 	
     <!-- Shows deploying code & running tests for code in directory -->
