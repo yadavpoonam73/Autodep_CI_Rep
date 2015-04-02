@@ -25,9 +25,5 @@
         <members>Marketing user Clone</members>
         <name>Profile</name>
     </types>
-    <types>
-        <members>MarketingTeam</members>
-        <name>Role</name>
-    </types>
     <version>15.0</version>
 </Package>
