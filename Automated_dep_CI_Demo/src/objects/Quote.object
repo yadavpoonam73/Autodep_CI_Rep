@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Quote_Description__c</fullName>
+        <label>Quote Description</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <webLinks>
+        <fullName>CreateOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasScrollbars>true</hasScrollbars>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>CreateOrder</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <url>/apex/convertedOrdersfronquote?Id={!Quote.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>createorderjavascript</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>createorderjavascript</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>alert (&apos;test1&apos;);
+			{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+			{!requireScript(&quot;/soap/ajax/29.0/apex.js&quot;)}
+			alert (&apos;test2&apos;);
+			var myId = &quot;{!Quote.Id}&quot;;
+			//get the session ID - was missing this line
+			sforce.connection.sessionId = &apos;{!$Api.Session_ID}&apos;;
+			sforce.apex.execute(&quot;convertQuoteintoOrder&quot;,&quot;
+			createOrder&quot;, {id:myId});
+			window.location.reload();</url>
+    </webLinks>
+</CustomObject>

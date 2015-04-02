@@ -1,0 +1,8 @@
+<apex:page controller="convertQuoteintoOrder" action="{!createOrder}">
+
+	<html>
+<body>This is the VF page for order
+</body>
+	</html>
+	<apex:outputField value="{Orders__c.Email__c}" />
+</apex:page>
