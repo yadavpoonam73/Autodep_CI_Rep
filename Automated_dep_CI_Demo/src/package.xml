@@ -18,10 +18,6 @@
         <name>Layout</name>
     </types>
     <types>
-        <members>testing</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
         <members>Marketing user Clone</members>
         <name>Profile</name>
     </types>
