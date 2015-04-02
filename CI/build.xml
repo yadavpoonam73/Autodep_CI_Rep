@@ -1,0 +1,24 @@
+<project name="Sample usage of Salesforce Ant tasks" default="deployUnpackaged" basedir="../../../Automated_Deployment_CI_Demo/src" xmlns:sf="antlib:com.salesforce">
+
+    <property file="build.properties"/>
+    <property environment="env"/>
+
+    <!-- REAL TARGETS -->
+	
+    <!-- Shows deploying code & running tests for code in directory -->
+    <target name="deployUnpackaged">
+      <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
+	  <!-- inlcude the below when building to live -->
+	  <!-- pollWaitMillis="100000" maxPoll="100" -->
+	  
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="${basedir}" pollWaitMillis="100000" maxPoll="100" checkOnly="${sf.checkOnly}" runAllTests="${sf.runAllTests}" logType="${sf.logLevel}">
+        <!--<runTest>clsCustomerSearch</runTest>-->
+      </sf:deploy>
+    </target>
+	
+	
+	<target name="undeployCode">
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployroot="${basedir}"/>
+	</target>
+
+</project>
