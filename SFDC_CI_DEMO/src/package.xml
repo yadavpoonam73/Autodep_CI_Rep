@@ -5,8 +5,8 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>MarketingTeam</members>
-        <name>Role</name>
+        <members>Custom%3A Marketing Profile</members>
+        <name>Profile</name>
     </types>
     <version>29.0</version>
 </Package>
