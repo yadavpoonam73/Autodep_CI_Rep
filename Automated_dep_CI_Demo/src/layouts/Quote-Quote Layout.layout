@@ -3,6 +3,8 @@
     <customButtons>CreateOrder</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
+        <customLabel>false</customLabel>
+        <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Quote Information</label>
         <layoutColumns>
@@ -48,6 +50,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Totals</label>
@@ -82,6 +85,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Prepared for</label>
@@ -108,6 +112,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Address Information</label>
@@ -134,6 +139,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>System Information</label>
@@ -152,6 +158,9 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>false</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
         <label>Custom Links</label>
         <layoutColumns/>
         <layoutColumns/>
@@ -166,6 +175,26 @@
         <fields>Discount</fields>
         <fields>GrandTotal</fields>
     </miniLayout>
+    <relatedContent>
+        <relatedContentItems>
+            <layoutItem>
+                <behavior>Readonly</behavior>
+                <field>ContactId</field>
+            </layoutItem>
+        </relatedContentItems>
+        <relatedContentItems>
+            <layoutItem>
+                <behavior>Readonly</behavior>
+                <field>AccountId</field>
+            </layoutItem>
+        </relatedContentItems>
+        <relatedContentItems>
+            <layoutItem>
+                <behavior>Readonly</behavior>
+                <field>OpportunityId</field>
+            </layoutItem>
+        </relatedContentItems>
+    </relatedContent>
     <relatedLists>
         <fields>QUOTE_LI.PRODUCT2</fields>
         <fields>QUOTE_LI.LIST_PRICE</fields>
@@ -205,4 +234,13 @@
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
+    <showEmailCheckbox>false</showEmailCheckbox>
+    <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+    <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
+    <summaryLayout>
+        <masterLabel>00h9000000OKtQc</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>0</sizeY>
+        <summaryLayoutStyle>Default</summaryLayoutStyle>
+    </summaryLayout>
 </Layout>
